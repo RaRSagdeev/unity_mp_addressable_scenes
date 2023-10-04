@@ -11,7 +11,7 @@ public class SpawnTest : NetworkBehaviour
     private GameObject spawnedObject;
     public void SpawnCube()
     {
-        Debug.LogError(gameObject.GetComponent<NetworkBehaviour>().NetworkObject.PrefabIdHash);
+        //Debug.LogError(gameObject.GetComponent<NetworkBehaviour>().NetworkObject.PrefabIdHash);
         SpawnServerRpc();
     }
 

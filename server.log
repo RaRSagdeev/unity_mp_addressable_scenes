@@ -1,0 +1,337 @@
+Mono path[0] = '/Users/kostbllb/projects/radel_example/unity_mp_addressable_scenes/build.app/Contents/Resources/Data/Managed'
+Mono config path = '/Users/kostbllb/projects/radel_example/unity_mp_addressable_scenes/build.app/Contents/MonoBleedingEdge/etc'
+Initialize engine version: 2021.3.14f1 (eee1884e7226)
+[Subsystems] Discovering subsystems at path /Users/kostbllb/projects/radel_example/unity_mp_addressable_scenes/build.app/Contents/Resources/Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.089 seconds
+UnloadTime: 2.714584 ms
+./build.app/contents/macos/networking
+-mode
+server
+-screen-fullscreen
+0
+-logfile
+server.log
+./build.app/contents/macos/networking
+-mode
+server
+-screen-fullscreen
+0
+-logfile
+server.log
+Exception: EnableSceneManagement flag is not enabled in the NetworkManager's NetworkConfig. Please set EnableSceneManagement flag to true before calling LoadScene or UnloadScene.
+  at Unity.Netcode.NetworkSceneManager.ValidateSceneEventLoading (System.String sceneName) [0x0002a] in <7440a35359fc471e98310d67c53d02d7>:0 
+  at Unity.Netcode.NetworkSceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneMode loadSceneMode) [0x00000] in <7440a35359fc471e98310d67c53d02d7>:0 
+  at EverySceneLoader.Update () [0x00045] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+
+[Netcode] NetworkObject #3 moved to the root because its parent NetworkObject #2 is destroyed
+[Netcode] NetworkObject #4 moved to the root because its parent NetworkObject #2 is destroyed
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.__rpc_handler_4166148372 (Unity.Netcode.NetworkBehaviour target, Unity.Netcode.FastBufferReader reader, Unity.Netcode.__RpcParams rpcParams) [0x0002e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at (wrapper delegate-invoke) <Module>.invoke_void_NetworkBehaviour_FastBufferReader___RpcParams(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+  at Unity.Netcode.RpcMessageHelpers.Handle (Unity.Netcode.NetworkContext& context, Unity.Netcode.RpcMetadata& metadata, Unity.Netcode.FastBufferReader& payload, Unity.Netcode.__RpcParams& rpcParams) [0x0004e] in <7440a35359fc471e98310d67c53d02d7>:0 
+Rethrow as Exception: Unhandled RPC exception!
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.Netcode.RpcMessageHelpers:Handle(NetworkContext&, RpcMetadata&, FastBufferReader&, __RpcParams&)
+Unity.Netcode.ServerRpcMessage:Handle(NetworkContext&)
+Unity.Netcode.NetworkMessageManager:ReceiveMessage(FastBufferReader, NetworkContext&, NetworkMessageManager)
+Unity.Netcode.NetworkMessageManager:HandleMessage(NetworkMessageHeader&, FastBufferReader, UInt64, Single, Int32)
+Unity.Netcode.NetworkMessageManager:ProcessIncomingMessageQueue()
+Unity.Netcode.NetworkManager:NetworkUpdate(NetworkUpdateStage)
+Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage(NetworkUpdateStage)
+Unity.Netcode.<>c:<CreateLoopSystem>b__0_0()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.__rpc_handler_4166148372 (Unity.Netcode.NetworkBehaviour target, Unity.Netcode.FastBufferReader reader, Unity.Netcode.__RpcParams rpcParams) [0x0002e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at (wrapper delegate-invoke) <Module>.invoke_void_NetworkBehaviour_FastBufferReader___RpcParams(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+  at Unity.Netcode.RpcMessageHelpers.Handle (Unity.Netcode.NetworkContext& context, Unity.Netcode.RpcMetadata& metadata, Unity.Netcode.FastBufferReader& payload, Unity.Netcode.__RpcParams& rpcParams) [0x0004e] in <7440a35359fc471e98310d67c53d02d7>:0 
+Rethrow as Exception: Unhandled RPC exception!
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.Netcode.RpcMessageHelpers:Handle(NetworkContext&, RpcMetadata&, FastBufferReader&, __RpcParams&)
+Unity.Netcode.ServerRpcMessage:Handle(NetworkContext&)
+Unity.Netcode.NetworkMessageManager:ReceiveMessage(FastBufferReader, NetworkContext&, NetworkMessageManager)
+Unity.Netcode.NetworkMessageManager:HandleMessage(NetworkMessageHeader&, FastBufferReader, UInt64, Single, Int32)
+Unity.Netcode.NetworkMessageManager:ProcessIncomingMessageQueue()
+Unity.Netcode.NetworkManager:NetworkUpdate(NetworkUpdateStage)
+Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage(NetworkUpdateStage)
+Unity.Netcode.<>c:<CreateLoopSystem>b__0_0()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.__rpc_handler_4166148372 (Unity.Netcode.NetworkBehaviour target, Unity.Netcode.FastBufferReader reader, Unity.Netcode.__RpcParams rpcParams) [0x0002e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at (wrapper delegate-invoke) <Module>.invoke_void_NetworkBehaviour_FastBufferReader___RpcParams(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+  at Unity.Netcode.RpcMessageHelpers.Handle (Unity.Netcode.NetworkContext& context, Unity.Netcode.RpcMetadata& metadata, Unity.Netcode.FastBufferReader& payload, Unity.Netcode.__RpcParams& rpcParams) [0x0004e] in <7440a35359fc471e98310d67c53d02d7>:0 
+Rethrow as Exception: Unhandled RPC exception!
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.Netcode.RpcMessageHelpers:Handle(NetworkContext&, RpcMetadata&, FastBufferReader&, __RpcParams&)
+Unity.Netcode.ServerRpcMessage:Handle(NetworkContext&)
+Unity.Netcode.NetworkMessageManager:ReceiveMessage(FastBufferReader, NetworkContext&, NetworkMessageManager)
+Unity.Netcode.NetworkMessageManager:HandleMessage(NetworkMessageHeader&, FastBufferReader, UInt64, Single, Int32)
+Unity.Netcode.NetworkMessageManager:ProcessIncomingMessageQueue()
+Unity.Netcode.NetworkManager:NetworkUpdate(NetworkUpdateStage)
+Unity.Netcode.NetworkUpdateLoop:RunNetworkUpdateStage(NetworkUpdateStage)
+Unity.Netcode.<>c:<CreateLoopSystem>b__0_0()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+KeyNotFoundException: The given key '1' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <41229cbbc9214cf28863fc47f2e1508c>:0 
+  at SpawnTest.SetMessageParent () [0x0001e] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnSomething () [0x00022] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnServerRpc () [0x000bb] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnTest.SpawnCube () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.SpawnSomething () [0x00005] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at SpawnButton.<Awake>b__1_0 () [0x00000] in <98e5f5f1924742b0b6e3576ff89a7f9f>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <ac668c9f729b49208dd68707aa3a9986>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00067] in <6e3e6b8aae7f4a45b0ce4a86be54b873>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+

@@ -18,7 +18,7 @@ namespace HelloWorld
         {
             if (IsServer)
             {
-                NetworkManager.SceneManager.VerifySceneBeforeLoading = ServerSideSceneValidation;
+                //NetworkManager.SceneManager.VerifySceneBeforeLoading = ServerSideSceneValidation;
                 //NetworkManager.SceneManager.OnSceneEvent += SceneManager_OnSceneEvent;
                 //var status = NetworkManager.SceneManager.LoadScene(m_SceneName, LoadSceneMode.Additive);
                 //CheckStatus(status);

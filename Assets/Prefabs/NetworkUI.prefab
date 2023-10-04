@@ -54,7 +54,7 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
@@ -71,4 +71,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cube: {fileID: 30827757592460683, guid: d21194a3fc6df704095c6934907e9bff, type: 3}
-  _spawnButton: {fileID: 0}
