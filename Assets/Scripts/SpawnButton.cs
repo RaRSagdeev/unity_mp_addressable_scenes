@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class SpawnButton : MonoBehaviour
 {
-    [SerializeField] SpawnTest _uimanager;
     [SerializeField] Button _button;
 
     private void Awake()
@@ -15,6 +14,6 @@ public class SpawnButton : MonoBehaviour
 
     private void SpawnSomething()
     {
-        _uimanager.SpawnCube();
+        FindObjectOfType<SpawnTest>().SpawnCube();
     }
 }
